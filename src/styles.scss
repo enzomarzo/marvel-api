@@ -1,0 +1,18 @@
+img {
+  width: 150px;
+  height: 150px;
+  border: 1px solid rgba(black, 0.2);
+  display: block;
+  border-radius: 5px;
+}
+
+.char {
+  width: 150px;
+  text-align: left;
+  margin-bottom: 10px;
+
+  text {
+    font-size: 15px;
+    margin-left: 3px
+  }
+}
