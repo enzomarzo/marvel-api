@@ -15,4 +15,22 @@ export class MarvelService {
   public listMarvelHeroes(): Observable<any> {
     return this.http.get(this.url)
   }
+
+/*   public CreateHero(charImg: string, charName: string, div: ElementRef) {
+    const divParent = document.createElement('div');
+    const divChild = document.createElement('div');
+    const textName = document.createElement('text');
+    const img = document.createElement('img');
+
+    textName.textContent = charName;
+    img.src = charImg;
+
+    divChild.appendChild(img);
+    divChild.appendChild(textName);
+    divParent.appendChild(divChild);
+    div.nativeElement.appendChild(divParent);
+    console.log(div)
+
+    divParent.classList.add('char');
+  } */
 }

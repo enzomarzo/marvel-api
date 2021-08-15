@@ -1,3 +1,12 @@
+<h1 class="titleHeroes">
+  20 heróis da Marvel que <br> (provavelmente) você nunca ouviu falar
+</h1>
+<!-- <app-img-hero></app-img-hero> -->
 
+<div #card class="card"></div>
 
-<div #hero class="hero"></div>
+<div class="tagList">
+  <a class="tagHero" *ngFor="let hero of heroes" (click)="showCard(hero)">
+    {{ hero.name }}
+  </a>
+</div>
