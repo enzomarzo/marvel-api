@@ -1,3 +1,16 @@
+<h1 class="titleHeroes">
+  Heróis da Marvel que você <br />
+  nunca ouviu falar
+</h1>
 
+<app-maind-card></app-maind-card>
 
-<div #hero class="hero"></div>
+<div class="tagList">
+  <a
+    class="tagHero"
+    *ngFor="let hero of heroes"
+    (click)="MainCard.showCard(hero)"
+  >
+    {{ hero.name }}
+  </a>
+</div>
