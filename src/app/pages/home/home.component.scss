@@ -29,19 +29,3 @@
   cursor: pointer;
 }
 
-.card {
-  display: flex;
-  margin: auto;
-  border: 1px solid rgba(black, 0.2);
-  width: 300px;
-  height: 290px;
-  background-image: url('/assets/images/marvel.jpg');
-  align-items: center;
-  justify-content: center;
-
-  span {
-    position: absolute;
-    background-color: white;
-    padding: 5px;
-  }
-}

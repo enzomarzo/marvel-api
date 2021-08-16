@@ -6,7 +6,14 @@ export interface Hero {
   modified: string
   name: string
   resourceURI: string
-  series: object
+  series:
+    {
+      available: number
+      items: [
+        name: string,
+        type: string
+      ]
+    }
   stories: object
   thumbnail: {
     extension: string
