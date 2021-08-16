@@ -1,13 +1,13 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
-import { MarvelService } from 'src/app/services/marvel.service';
+import { Component, OnInit } from '@angular/core';
 import { Subscription } from 'rxjs';
+import { MarvelService } from 'src/app/services/marvel.service';
 
 @Component({
-  selector: 'app-char-details',
-  templateUrl: './char-details.component.html',
-  styleUrls: ['./char-details.component.scss'],
+  selector: 'app-char-stories',
+  templateUrl: './char-stories.component.html',
+  styleUrls: ['./char-stories.component.scss']
 })
-export class CharDetailsComponent implements OnInit {
+export class CharStoriesComponent implements OnInit {
   hero: any = [];
   heroImg: string;
   subscription: Subscription;
@@ -22,4 +22,5 @@ export class CharDetailsComponent implements OnInit {
     this.heroImg = this.hero.thumbnail.path + '.' + this.hero.thumbnail.extension;
     console.log(this.hero)
   }
+
 }

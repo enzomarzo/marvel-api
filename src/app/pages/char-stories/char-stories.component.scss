@@ -20,7 +20,6 @@ h1 {
 .tagList {
   float: left;
   list-style-type: none;
-  margin-bottom: 20px;
 }
 
 .tag-item {
@@ -28,29 +27,9 @@ h1 {
   font-size: 0.9rem;
 
   &::before {
-    content: "🎬";
+    content: "🦸🏿‍♂️";
     font-size: 0.8em;
     vertical-align: top;
     margin-right: 3px;
   }
-}
-
-.charImgWiki {
-  background: #fafafa;
-  border: 6px solid #fafafa;
-  border-radius: 3px;
-  box-shadow: 0 0 0 1px #cacdd1;
-  clear: right;
-  float: right;
-  margin: 5px;
-  max-width: 300px;
-  padding: 1px;
-  position: relative;
-  width: 350px;
-  height: 350px;
-}
-
-.stories {
-  display: block;
-  margin-left: 5px;
 }

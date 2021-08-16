@@ -1,0 +1,15 @@
+<section class="container">
+  <h1>{{ hero.name }} Stories</h1>
+
+  <div class="content">
+    <div class="wiki-content">
+      <ul class="tagList">
+        <h3>Stories ({{ hero.stories.items.length }}):</h3>
+        <li class="tag-item" *ngFor="let storie of hero.stories.items">
+          {{ storie.name }}
+        </li>
+      </ul>
+    </div>
+
+  </div>
+</section>

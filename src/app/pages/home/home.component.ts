@@ -1,8 +1,6 @@
-import { ElementRef, EventEmitter, Output } from '@angular/core';
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { Hero } from 'src/app/models/hero.model';
 import { MarvelService } from 'src/app/services/marvel.service';
-import { Subscription } from 'rxjs';
 import { MaindCardComponent } from 'src/app/shared/maind-card/maind-card.component';
 
 @Component({
