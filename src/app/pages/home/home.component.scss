@@ -1,6 +1,31 @@
+.titleHeroes {
+  margin: 30px;
+  text-align: center;
+}
+
 .hero {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+
+.tagList {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px;
+  justify-content: center;
+}
+
+.tagHero {
+  width: 120px;
+  font-size: 13px;
+  list-style-type: none;
+  background-color: lightgrey;
+  padding: 10px;
+  margin: 20px 10px;
+  font-weight: 600;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
 }
 

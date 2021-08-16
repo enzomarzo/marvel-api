@@ -1,0 +1,18 @@
+<section class="container">
+  <h1>{{ hero.name }}</h1>
+
+  <div class="content">
+    <div class="wiki-content">
+      <p *ngIf="hero.description" class="char-about">{{ hero.description }}</p>
+      <ul class="tagList">
+        <h3>Series ({{ hero.series.items.length }}):</h3>
+        <li class="tag-item" *ngFor="let serie of hero.series.items">
+          {{ serie.name }}
+        </li>
+      </ul>
+      <a class="stories" routerLink="/char-stories" >Veja todas histórias desse char</a>
+    </div>
+
+    <img class="charImgWiki" src="{{ heroImg }}" />
+  </div>
+</section>
