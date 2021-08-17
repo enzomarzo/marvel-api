@@ -10,6 +10,7 @@ import { MarvelService } from 'src/app/services/marvel.service';
 export class MaindCardComponent implements OnInit {
   @ViewChild('card') card: ElementRef<HTMLElement>;
   heroes: Array<Hero> = []
+  HeroIsClicked: boolean = false
 
   constructor(private marvelService: MarvelService) {}
 
@@ -33,5 +34,6 @@ export class MaindCardComponent implements OnInit {
 
     divParent.classList.add('char');
     this.marvelService.changeHero(hero)
+    this.HeroIsClicked = true
   }
 }
