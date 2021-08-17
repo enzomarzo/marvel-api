@@ -1,3 +1,7 @@
-<a routerLink="/char-details">
-  <div #card class="card"></div>
+<a *ngIf="!HeroIsClicked">
+  <div #card class="homeImg"></div>
+</a>
+
+<a *ngIf="HeroIsClicked" routerLink="/char-details">
+  <div #card class="homeImg"></div>
 </a>
