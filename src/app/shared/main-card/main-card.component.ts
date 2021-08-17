@@ -3,11 +3,11 @@ import { Hero } from 'src/app/models/hero.model';
 import { MarvelService } from 'src/app/services/marvel.service';
 
 @Component({
-  selector: 'app-maind-card',
-  templateUrl: './maind-card.component.html',
-  styleUrls: ['./maind-card.component.scss']
+  selector: 'app-main-card',
+  templateUrl: './main-card.component.html',
+  styleUrls: ['./main-card.component.scss']
 })
-export class MaindCardComponent implements OnInit {
+export class mainCardComponent implements OnInit {
   @ViewChild('card') card: ElementRef<HTMLElement>;
   heroes: Array<Hero> = []
   HeroIsClicked: boolean = false

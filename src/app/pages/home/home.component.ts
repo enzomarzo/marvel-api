@@ -1,7 +1,7 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { Hero } from 'src/app/models/hero.model';
 import { MarvelService } from 'src/app/services/marvel.service';
-import { MaindCardComponent } from 'src/app/shared/maind-card/maind-card.component';
+import { mainCardComponent } from 'src/app/shared/main-card/main-card.component';
 
 @Component({
   selector: 'app-home',
@@ -9,7 +9,7 @@ import { MaindCardComponent } from 'src/app/shared/maind-card/maind-card.compone
   styleUrls: ['./home.component.scss'],
 })
 export class HomeComponent implements OnInit {
-  @ViewChild(MaindCardComponent) MainCard: MaindCardComponent;
+  @ViewChild(mainCardComponent) MainCard: mainCardComponent;
   heroes: Array<Hero> = [];
   heroChild: Hero;
 

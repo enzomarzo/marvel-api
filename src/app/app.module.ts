@@ -7,7 +7,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './pages/home/home.component';
 import { CharDetailsComponent } from './pages/char-details/char-details.component';
 import { FooterComponent } from './pages/footer/footer.component';
-import { MaindCardComponent } from './shared/maind-card/maind-card.component';
+import { mainCardComponent } from './shared/main-card/main-card.component';
 import { CharStoriesComponent } from './pages/char-stories/char-stories.component';
 
 @NgModule({
@@ -16,7 +16,7 @@ import { CharStoriesComponent } from './pages/char-stories/char-stories.componen
     HomeComponent,
     CharDetailsComponent,
     FooterComponent,
-    MaindCardComponent,
+    mainCardComponent,
     CharStoriesComponent,
   ],
   imports: [
